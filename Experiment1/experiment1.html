@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Calculator</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Student Result Calculator</h2>
+    
+    <label for="subject">Enter the number of subjects:</label><br>
+    <input type="number" id="subject"><br><br>
+    
+    <button onclick="calculateResult()">Calculate Result</button>
+    <div id="result"></div>
+  </div>
+  
+  <script src="experiment1.js"></script>
+</body>
+</html>
