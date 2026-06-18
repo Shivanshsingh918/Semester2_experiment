@@ -21,7 +21,7 @@ function calculateResult() {
   } else if (average >= 50) {
     grade = "C";
   } else if (average >= 35) {
-    grade = "D";
+    grade = "D";                   
   } else if (average >= 25) {
     grade = "E";
   } else if (average >= 15) {
