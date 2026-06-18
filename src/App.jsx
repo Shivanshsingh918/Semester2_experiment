@@ -1,27 +1,32 @@
-import Student from "./Student";
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  const reset = () => {
+    setCount(0);
+  };
+
   return (
-    <div>
-      <h1>Student Information</h1>
+    <div className="container">
+      <h1>React Counter Application</h1>
 
-      <Student
-        name="Raj"
-        course="B.Tech"
-        marks="90"
-      />
+      <h2 className="counter">{count}</h2>
 
-      <Student
-        name="Ram"
-        course="M.Tech"
-        marks="95"
-      />
-
-      <Student
-        name="Rohan"
-        course="MCA"
-        marks="98"
-      />
+      <div className="buttons">
+        <button onClick={increment}>Increment (+)</button>
+        <button onClick={decrement}>Decrement (-)</button>
+        <button onClick={reset}>Reset</button>
+      </div>
     </div>
   );
 }
