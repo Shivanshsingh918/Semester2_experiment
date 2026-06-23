@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">amazon</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Amazon">
+        <button>Search</button>
+    </div>
+
+    <div class="nav-links">
+        <a href="#">Account</a>
+        <a href="#">Orders</a>
+        <a href="#">Cart (<span id="cartCount">0</span>)</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Amazon Clone</h1>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="">
+        <h3>Headphones</h3>
+        <p>₹999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="">
+        <h3>Smart Watch</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="">
+        <h3>Laptop</h3>
+        <p>₹49999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="">
+        <h3>Mobile</h3>
+        <p>₹14999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
